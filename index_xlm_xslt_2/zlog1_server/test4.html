@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   
+<body>
+
+<h1>W3Schools Internal Note</h1>
+
+<div>
+<b>To:</b> <span id="to"></span><br>
+<b>From:</b> <span id="from"></span><br>
+<b>Message:</b> <span id="message"></span>
+</div>
+
+<div>
+<b>Name:</b> <span id = "name"></span><br>
+<b>Company:</b> <span id = "company"></span><br>
+<b>Phone:</b> <span id = "phone"></span>
+</div>
+
+
+
+
+
+
+<script>
+var xmlhttp, xmlDoc;
+xmlhttp = new XMLHttpRequest();
+
+xmlhttp.open("GET", "test4employee.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+
+document.getElementById("to").innerHTML=
+xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
+document.getElementById("from").innerHTML=
+xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
+document.getElementById("message").innerHTML=
+xmlDoc.getElementsByTagName("body")[0].childNodes[0].nodeValue;
+
+document.getElementById("name").innerHTML=
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("company").innerHTML=
+xmlDoc.getElementsByTagName("company")[0].childNodes[0].nodeValue;
+document.getElementById("phone").innerHTML=
+xmlDoc.getElementsByTagName("phone")[0].childNodes[0].nodeValue;
+
+</script>
+</body>
+</html>

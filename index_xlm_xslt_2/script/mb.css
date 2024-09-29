@@ -1,0 +1,66 @@
+
+iframe {
+	height: 1200px;
+	width: 98%;
+	display: inline-block;
+	overflow: auto; 
+	border: 0px;
+}
+
+/* ################################# */
+
+#menue1 {
+	width: 98%;
+	text-align: left;
+	background-color:transparent;
+	display: none;
+  }
+  
+#menue2 {
+	width: 98%;
+	text-align: left;
+	background-color:transparent;
+	display: none;
+  }
+
+
+#logo {
+	height: 30px;
+	width: 50px;
+}
+
+#a {
+	display: inline-block;
+	padding: 5px 5px 0px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #444444;
+}
+
+
+/* ################################# */
+
+.menuebutton {
+	padding: 0 40px 0 40px;
+	margin: 0 40px 0 40px;
+	display: inline-block;
+	background:#bababa;
+	color: #1f1f1f;
+}
+
+.menuebutton:hover {
+	padding: 0 40px 0 40px;
+	display: inline-block;
+	background:#7ca17c;
+	color: #1f1f1f;
+}
+
+.menuebutton:active {
+	padding: 0 40px 0 40px;
+	display: inline-block;
+	background:#7ca17c;
+	color: #1f1f1f;
+}
+
+/* ###############################  */

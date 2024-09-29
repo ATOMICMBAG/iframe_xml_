@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML-Beispieldatei - CRS_Leerlieferung_1-->
+<n1:ELMACS    xmlns="urn:oecd:ties:crs:v1" 
+						xmlns:stf="urn:oecd:ties:stf:v4" 
+						xmlns:n1="http://www.itzbund.de/ELAN/01" 
+						xmlns:cfc="urn:oecd:ties:commontypesfatcacrs:v1" 
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+						xmlns:crs="urn:oecd:ties:crs:v1" 
+						xmlns:ftc="urn:oecd:ties:fatca:v1"
+						xsi:schemaLocation="http://www.itzbund.de/ELAN/01 CRS_XML_XSD/ELMACS_000001.xsd">
+	<n1:ELMAKOM>
+		<ELMAHeader xmlns="">
+			<DatenArt>CRS_ELMA</DatenArt>
+			<AuthSteuernummer>BZ100012345</AuthSteuernummer>
+			<n1:AccountID>1234567890</n1:AccountID>
+			<n1:ErstellungsDatum>2017-03-10T09:36:00Z</n1:ErstellungsDatum>
+			<!--Achtung: KundeneigeneID ist optional und muss bei Verwendung exakt 12 Zeichen lang sein-->
+			<n1:KundeneigeneID>123456789041</n1:KundeneigeneID>
+			<n1:UUID>67446bd9-e402-492b-954b-ac50cbf1bd0b</n1:UUID>
+			<n1:Verarbeitungslauf>PRODUKTIONSLAUF</n1:Verarbeitungslauf>
+		</ELMAHeader>
+		<ELMAVerfahren xmlns="">
+			<crs:CRS_OECD version="1.0">
+				<crs:MessageSpec>
+					<crs:TransmittingCountry>DE</crs:TransmittingCountry>
+					<crs:ReceivingCountry>DE</crs:ReceivingCountry>
+					<crs:MessageType>CRS</crs:MessageType>
+					<crs:MessageRefId>DE2016DE133/8150/815-1021</crs:MessageRefId>
+					<crs:MessageTypeIndic>CRS703</crs:MessageTypeIndic>
+					<crs:ReportingPeriod>2016-12-31</crs:ReportingPeriod>
+					<crs:Timestamp>2017-03-10T09:36:00Z</crs:Timestamp>
+				</crs:MessageSpec>
+				<crs:CrsBody>
+					<crs:ReportingFI>
+						<crs:ResCountryCode>DE</crs:ResCountryCode>
+							<crs:IN issuedBy="DE" INType="TIN">133/8150/815</crs:IN>
+							<crs:Name>Testbank</crs:Name>
+							<crs:Address>
+								<cfc:CountryCode>DE</cfc:CountryCode>
+								<cfc:AddressFix>
+									<cfc:Street>Musterstrasse</cfc:Street>
+									<cfc:BuildingIdentifier>1</cfc:BuildingIdentifier>
+									<cfc:PostCode>10111</cfc:PostCode>
+									<cfc:City>Musterstadt</cfc:City>
+								</cfc:AddressFix>
+							</crs:Address>
+							<crs:DocSpec>
+								<stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+								<stf:DocRefId>DE2016133/8150/815FI1021</stf:DocRefId>
+							</crs:DocSpec>
+						</crs:ReportingFI>
+					<crs:ReportingGroup></crs:ReportingGroup>
+				</crs:CrsBody>
+			</crs:CRS_OECD>
+		</ELMAVerfahren>
+	</n1:ELMAKOM>
+</n1:ELMACS>

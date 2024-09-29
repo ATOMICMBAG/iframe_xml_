@@ -1,0 +1,58 @@
+html, body{ 	
+	width: 98%;
+	margin: 10px auto;
+	padding: 10px auto;
+	font-family: arial;
+	color: #fff;
+	background-color: #333333;
+}
+
+pre {
+	height: 600px;
+	width: 98%;
+	white-space: pre;
+	overflow-wrap: break-word;
+	overflow: auto; 
+}
+
+iframe {
+	height: 600px;
+	width: 98%;
+	display: flex;
+	white-space: pre;
+	overflow-wrap: break-word;
+	overflow: auto; 
+}
+
+.half {
+	margin: 10px auto;
+	padding: 10px auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row: auto auto;
+	
+}
+
+
+
+
+
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
